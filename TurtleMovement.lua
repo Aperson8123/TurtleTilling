@@ -112,17 +112,6 @@ function TurtleMovement.moveLeft(steps)
     end
 end
 
--- function TurtleMovement.moveDown(steps)
---     steps = steps or 1
---     print("Moving left by "..steps)
---     for i = 1, steps, 1 do
---         if turtle.down() then
---             TurtleMovement.position.y = TurtleMovement.position.y - 1
---             TurtleIO.serializeTo(TurtleMovement.position)
---         end
---     end
--- end
-
 function TurtleMovement.moveTo(targetPos)
     local getX = TurtleIO.readFrom(positionDataHandle).x
     local getY = TurtleIO.readFrom(positionDataHandle).y
